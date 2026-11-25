@@ -1,0 +1,41 @@
+name: electro_pass
+description: Electro Pass - a minimal, offline password manager.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.3
+  flutter_secure_storage: ^9.2.2
+  crypto: ^3.0.3
+  encrypt: ^5.0.3
+  path_provider: ^2.1.4
+  image_picker: ^1.1.2
+  url_launcher: ^6.3.0
+  supabase_flutter: ^2.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+  adaptive_icon_background: "#100F0D"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/icon.png"
+    background_color: "#100F0D"
+    theme_color: "#100F0D"
+
+flutter:
+  uses-material-design: true
